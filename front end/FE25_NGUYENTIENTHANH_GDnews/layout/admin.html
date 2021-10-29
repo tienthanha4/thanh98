@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài 9 JQuery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="../css/admin.css">
+</head>
+<body>
+	<main>
+		<div class="sidbar_left">
+			<div class="logo">
+				CMS
+			</div>
+			<div class="menu_sidebar">
+				 <ul class="nav nav-tabs">
+				 	<li>
+				 		<a href="#tab-1"data-toggle="tab">Tài khoản</a>
+				 	</li>
+				 	<li>
+				 		<a href="#tab-2"data-toggle="tab">Bài Đăng</a>
+				 	</li>
+				 	<li>
+				 		<a href="#tab-3"data-toggle="tab">Thể Loại</a>
+				 	</li>
+				 	<li>
+				 		<a href="#tab-4"data-toggle="tab">Lượt Xem</a>
+				 	</li>
+				 	
+				 </ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top_content">
+				<div class="top_left">
+					<div class="input-group-append">
+						<button type="button" id="show_hide_sidebar">
+						<i class="fas fa-ellipsis-v"></i>
+					</button>
+					
+					</div>
+					<form method="GET" action="#" class="form-control">
+						<input type="text" name="keywrod"
+						 placeholder="Tìm kiếm ..." >
+						<button type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+				</div>
+				<div class="top_right">
+					<button class="btn_account">
+						<img src="../images/avatar10.jpg" width="25px"> Tubean <i class="fas fa-chevron-down"></i>
+						<div class="info hide_info">
+							<ul>
+								<li>
+									<a href="#">Profile</a>
+								</li>
+								<li>
+									<a href="#">Setting</a>
+								</li>
+								<li>
+									<a href="#">Change password</a>
+								</li>
+								<li>
+									<a href="#">Logout</a>
+								</li>
+							</ul>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div class="bottom_content">
+				<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+<div class="muti-tabs">
+	<div class="row">
+		 <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active show " id="tab-1">
+        	<div>
+        		<h2 class="page-title">Tài Khoản
+								<i class="fa fa-angle-right"></i>
+							</h2>
+        	</div>
+        	<div class="info-account">
+        		<ul class="list-group ds">
+						  <li class="list-group-item info-account-header ">
+						  	<span>ID</span>
+						  	<span>Users</span>
+						  	<span>Passwork</span>
+						  	<span>Email</span>
+						  	<span>Action</span>
+						  </li>
+						  <li class="list-group-item info-account-content">
+						  	<span id="1"></span>
+						  	<span>Thanh98</span>
+						  	<span>3755142</span>
+						  	<span><input type="" name="email" value="Tienthanha4@gmail.com" disabled></span>
+						  	<span>
+						  			<button type="button" class="btn btn-secondary btn-sua">Sua</button>
+										<button type="button" class="btn btn-secondary btn-del">Xoa</button>
+										
+										
+								</span>
+						  	
+						  </li>
+						  <li class="list-group-item info-account-content">
+						  	<span id="2"></span>
+						  	<span>Thanh98</span>
+						  	<span>3755142</span>
+						  	<span><input type="" name="email" value="Tienthanha4@gmail.com" disabled></span>
+						  	<span>
+						  			<button type="button" class="btn btn-secondary btn-sua">Sua</button>
+										<button type="button" class="btn btn-secondary btn-del">Xoa</button>
+										
+								</span>
+						  	
+						  </li>
+						  <li class="list-group-item info-account-content">
+						  	<span id="3"></span>
+						  	<span>Thanh98</span>
+						  	<span>3755142</span>
+						  	<span><input type="" name="email" value="Tienthanha4@gmail.com" disabled></span>
+						  	<span>
+						  			<button type="button" class="btn btn-secondary btn-sua">Sua</button>
+										<button type="button" class="btn btn-secondary btn-del">Xoa</button>
+										
+								</span>
+						  	
+						  </li>
+						  <li class="list-group-item info-account-content" id="test1111">
+						  	<span id="4"></span>
+						  	<span>Thanh98</span>
+						  	<span>3755142</span>
+						  	<span><input type="" name="email" value="Tienthanha4@gmail.com" disabled></span>
+						  	<span>
+						  			<button type="button" class="btn btn-secondary btn-sua">Sua</button>
+										<button type="button" class="btn btn-secondary btn-del">Xoa</button>
+										
+								</span>
+						  	
+						  </li>
+						  
+						</ul>
+						<ul class="list-group add">
+						  <li class="list-group-item">
+						  	<button type="button" class="btn btn-secondary float-right  btn-add">them moi</button>
+						  	
+						  </li>
+						</ul>
+        	</div>
+        </div>
+        <div role="tabpanel" class="tab-pane  tab-2" id="tab-2">
+        	<div>
+        		<h2 class="page-title">Bài Đăng
+								<i class="fa fa-angle-right"></i>
+							</h2>
+        	</div>
+        	<div class="input-group mb-3">
+
+				  <input type="text" class="form-control tieude" placeholder="Tieu De" aria-label="Username" aria-describedby="basic-addon1">
+
+				</div>
+<div class="err"><span id="re_error-1" style="color: red;">Bạn chưa nhập</span></div>
+<div class="input-group mb-3">
+  <input type="text" class="form-control email" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+</div>
+<div class="err"><span id="re_error-2" style="color: red;">Bạn chưa nhập</span></div>
+<div class="form-group">
+			    <label for="exampleFormControlFile1">Example file input</label>
+			    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+			  </div>
+			</form>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">The Loai</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">With textarea</span>
+  </div>
+  <textarea class="form-control mota" aria-label="With textarea"></textarea>
+</div>
+<div class="err"><span id="re_error-3" style="color: red;">Bạn chưa nhập</span></div>
+<div class=" gr-button" role="group" aria-label="Basic example">
+ 	<button type="button" class="btn btn-success btn-luu">Luu</button>
+  <button type="button" class="btn btn-secondary">Huy</button>
+  
+</div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-3">This is Messages content</div>
+        <div role="tabpanel" class="tab-pane" id="tab-4">This is Settings content</div>
+      </div>
+    </div>
+	</div>
+</div>
+
+</body>
+<script src="../boottrap/bootstrap.min.css"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/admin.js"></script>
+</html>
+<!-- jquery truoc bootrap -> script -->
